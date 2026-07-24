@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Camp Transformation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">🌲 CAMP <span>TRANSFORMATION</span></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="signup.html" class="btn-nav">Sign Up Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section style="text-align: center; margin-bottom: 2rem;">
+      <h1 style="color: var(--navy-dark); font-size: 2.5rem;">2026 CAMPER REGISTRATION</h1>
+      <p style="color: var(--text-muted);">Spaces are strictly capped at 120 campers per session to preserve our 1:8 counselor ratio.</p>
+    </section>
+
+    <div class="form-container">
+      <form action="#" method="post" onsubmit="event.preventDefault(); alert('Registration Submitted Successfully!');">
+        
+        <h3 style="color: var(--navy-dark); border-bottom: 2px solid var(--electric-cyan); padding-bottom: 0.4rem; margin-bottom: 1.2rem;">1. CAMPER DETAILS</h3>
+        
+        <div class="form-group">
+          <label for="camperName">Camper Full Name</label>
+          <input type="text" id="camperName" placeholder="First and Last Name" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required>
+          </div>
+          <div class="form-group">
+            <label for="shirt">T-Shirt Size</label>
+            <select id="shirt">
+              <option>Adult Small</option>
+              <option>Adult Medium</option>
+              <option>Adult Large</option>
+              <option>Adult XL</option>
+            </select>
+          </div>
+        </div>
+
+        <h3 style="color: var(--navy-dark); border-bottom: 2px solid var(--electric-cyan); padding-bottom: 0.4rem; margin-bottom: 1.2rem; margin-top: 1.8rem;">2. PARENT / GUARDIAN CONTACT</h3>
+        
+        <div class="form-group">
+          <label for="parentName">Parent/Guardian Name</label>
+          <input type="text" id="parentName" placeholder="First and Last Name" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="parent@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Emergency Phone</label>
+            <input type="tel" id="phone" placeholder="(555) 000-0000" required>
+          </div>
+        </div>
+
+        <h3 style="color: var(--navy-dark); border-bottom: 2px solid var(--electric-cyan); padding-bottom: 0.4rem; margin-bottom: 1.2rem; margin-top: 1.8rem;">3. SESSION & SAFETY</h3>
+        
+        <div class="form-group">
+          <label for="session">Select Camp Session</label>
+          <select id="session">
+            <option>Session A: June 15 – June 19, 2026</option>
+            <option>Session B: July 6 – July 10, 2026</option>
+            <option>Session C: August 3 – August 7, 2026</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="medical">Dietary, Allergy, or EpiPen Requirements</label>
+          <textarea id="medical" rows="3" placeholder="List any allergies, medication schedules, or dietary needs..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-cta" style="width: 100%; border: none; cursor: pointer; margin-top: 1rem; text-align: center;">
+          COMPLETE REGISTRATION & SECURE SPOT
+        </button>
+
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p><strong>Camp Transformation Youth Foundation</strong> | 1-800-CAMP-FUN</p>
+    <p style="font-size: 0.85rem; margin-top: 0.5rem;">&copy; 2026 Camp Transformation. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
