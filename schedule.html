@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camp Schedule | Camp Transformation</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Page-specific layout tweaks for Schedule */
+    .day-card {
+      background: var(--card-bg);
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      margin-bottom: 2rem;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .day-card:hover {
+      border-color: var(--electric-cyan);
+    }
+    .day-header {
+      background: linear-gradient(90deg, var(--navy-dark), var(--navy-light));
+      color: white;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid var(--electric-cyan);
+    }
+    .day-header h2 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    .day-tag {
+      background-color: var(--fiery-orange);
+      color: white;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+    .schedule-list {
+      padding: 1.5rem;
+      list-style: none;
+    }
+    .schedule-item {
+      display: flex;
+      gap: 1.5rem;
+      padding: 0.8rem 0;
+      border-bottom: 1px dashed var(--border-color);
+    }
+    .schedule-item:last-child {
+      border-bottom: none;
+    }
+    .time-slot {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      color: var(--forest-green);
+      min-width: 130px;
+      font-size: 1.05rem;
+    }
+    .activity-desc {
+      color: var(--text-dark);
+    }
+    .call-window-highlight {
+      background-color: #fefce8;
+      border-left: 4px solid var(--amber-gold);
+      padding-left: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- GLOBAL WEBSITE NAVBAR -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">🌲 CAMP <span>TRANSFORMATION</span></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="schedule.html" style="color: var(--electric-cyan);">Schedule</a>
+        <a href="signup.html" class="btn-nav">Sign Up Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <span class="badge">5 DAYS OF ACTION & GROWTH</span>
+      <h1>CAMP SCHEDULE & <span>DAILY ITINERARY</span></h1>
+      <p>Every hour is engineered for adventure, team building, and preparing campers for the big jump to high school.</p>
+      <a href="signup.html" class="btn-cta">SECURE YOUR SESSION SLOT</a>
+    </section>
+
+    <!-- TYPICAL DAILY RHYTHM SNAPSHOT -->
+    <section class="card" style="margin-bottom: 2.5rem; border-top: 4px solid var(--forest-green);">
+      <h2 style="color: var(--navy-dark); font-size: 1.8rem; margin-bottom: 0.5rem;">⚡ TYPICAL DAILY RHYTHM</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1rem;">While each day features unique special events, our baseline daily routine balances active outdoor challenges with rest, social bonding, and safety safeguards.</p>
+      
+      <div class="grid-3" style="margin: 0;">
+        <div style="background: var(--bg-light); padding: 1rem; border-radius: 6px;">
+          <h4 style="color: var(--navy-dark); font-family: 'Oswald', sans-serif;">MORNING</h4>
+          <p style="font-size: 0.95rem;">Breakfast, Cabin Inspection, Morning Rally, & High-Adventure Outdoor Rotations.</p>
+        </div>
+        <div style="background: var(--bg-light); padding: 1rem; border-radius: 6px;">
+          <h4 style="color: var(--navy-dark); font-family: 'Oswald', sans-serif;">AFTERNOON</h4>
+          <p style="font-size: 0.95rem;">Lunch, Waterfront / Kayaking, Skill Workshops, & Daily Parent Call Window (04:45 PM – 05:30 PM).</p>
+        </div>
+        <div style="background: var(--bg-light); padding: 1rem; border-radius: 6px;">
+          <h4 style="color: var(--navy-dark); font-family: 'Oswald', sans-serif;">EVENING</h4>
+          <p style="font-size: 0.95rem;">Themed Dinner Fest, Night Tournaments & Showcases, Campfire Reflection, & Cabin Lights Out.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DAY-BY-DAY BREAKDOWN -->
+    <h2 style="text-align: center; color: var(--navy-dark); font-size: 2.2rem; margin-bottom: 1.5rem;">5-DAY DETAILED PROGRAMME</h2>
+
+    <!-- DAY 1 -->
+    <div class="day-card">
+      <div class="day-header">
+        <h2>DAY 1: ARRIVAL, BONDING & BBQ BASH</h2>
+        <span class="day-tag">WELCOME & FOUNDATIONS</span>
+      </div>
+      <ul class="schedule-list">
+        <li class="schedule-item">
+          <span class="time-slot">01:00 PM – 02:30 PM</span>
+          <div class="activity-desc"><strong>Check-In & Cabin Orientation:</strong> Meet your counselors (1:8 ratio), move into cabins, and complete mandatory health check-in with our 24/7 RN.</div>
+        </li>
+        <li class="schedule-item">
+          <span class="time-slot">03:00 PM – 04:30 PM</span>
+          <div class="activity-desc"><strong>Icebreaker Games & Team Naming:</strong> Cabin challenges to set camp goals and forge early connections.</div>
+        </li>
+        <li class="schedule-item call-window-highlight">
+          <span class="time-slot">04:45 PM – 05:30 PM</span>
+          <div class="activity-desc"><strong>📱 Daily Parent Call Window:</strong> Campers check in with home before daytime digital detox commences.</div>
+        </li>
+        <li class="schedule-item">
+          <span class="time-slot">06:00 PM – 07:30 PM</span>
+          <div class="activity-desc"><strong>Welcome BBQ Bash:</strong> Camp-wide kickoff dinner featuring custom options for all dietary needs.</div>
+        </li>
+        <li class="schedule-item">
+          <span class="time-slot">08:00 PM – 10:00 PM</span>
+          <div class="activity-desc"><strong>DIY Swag Screen-Printing & Opening Campfire:</strong> Custom-print camp t-shirts and join the opening night campfire ceremony.</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- DAY 2 -->
+    <div class="day-card">
+      <div class="day-header">
+        <h2>DAY 2: HIGH ROPES & ESPORTS ARENA</h2>
+        <span class="day-tag">COURAGE & STRATEGY</span>
+      </div>
+      <ul class="schedule-list">
+        <li class="schedule-item">
+          <span class="time-slot">08:30 AM – 12:00 PM</span>
+          <div class="activity-desc"><strong>ACCT Canopy Zipline & High Ropes:</strong> Certified guides lead teams through aerial obstacle courses to build confidence and resilience.</div>
+        </li>
+        <li class="schedule-item">
+          <span class="time-slot">01:30 PM – 04:30 PM</span>
+          <div class="activity-desc"><strong>Lake Adventures:</strong> Kayaking, paddleboarding, and water team races guarded by Red Cross certified lifeguards.</div>
+        </li>
+        <li class="schedule-item call-window-highlight">
+          <span class="time-slot">04:45 PM – 05:30 PM</span>
+          <div class="activity-desc"><strong>📱 Daily Parent Call Window:</strong> 45-minute daily check-in window.</div>
+        </li>
+        <li class="schedule-item">
+          <span class="time-slot">06:00 PM – 07:30 PM</span>
+          <div class="activity-desc"><strong>Pasta Bar Dinner:</strong> Energy-packed feast with gluten-free & vegan stations.</div>
+        </li>
+        <li class="schedule-item">
+          <span class="time-slot">07:45 PM – 09:45 PM</span>
+          <div class="activity-desc"><strong>Switch Esports League:</strong> Organised team-based gaming tournament emphasizing communication and strategy.</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- DAY 3 -->
+    <div class="day-card">
+      <div class="day-header">
+        <h2>DAY 3: MASTER CHEF & COMMUNITY IMPACT</h2>
+        <span class="day-tag">CREATIVITY & LEADERSHIP</span>
+      </div>
+      <ul class="schedule-list">
+        <li class="schedule-item">
+          <span class="time-slot">09:00 AM – 12:00 PM</span>
+          <div class="activity-desc"><strong>Community Impact Projects:</strong> Collaborative service project giving back to local forest conservation and trail restoration.</div>
+        </li>
+        <li class="schedule-item">
+          <span class="time-slot">01:30 PM – 04:30 PM</span>
+          <div class="activity-desc"><strong>High School Readiness Workshops:</strong> Interactive group discussions on navigating high school social circles, time management, and self-advocacy.</div>
+        </li>
+        <li class="schedule-item call-window-highlight">
+          <span class="time-slot">04:45 PM – 05:30 PM</span>
+          <div class="activity-desc"><strong>📱 Daily Parent Call Window:</strong> 45-minute daily check-in window.</div>
+        </li>
+        <li class="schedule-item">
+          <span class="time-slot">06:00 PM – 08:30 PM</span>
+          <div class="activity-desc"><strong>Master Chef Culinary Battle & Luau Night:</strong> Cabin teams prepare signature gourmet dishes over camp stoves, evaluated by counselor judges!</div>
+        </li>
+        <li class="schedule-item">
+          <span class="time-slot">09:00 PM – 10:00 PM</span>
+          <div class="activity-desc"><strong>Stargazing & Campfire Stories:</strong> Nighttime trail walk and campfire reflection.</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- DAY 4 -->
+    <div class="day-card">
+      <div class="day-header">
+        <h2>DAY 4: FINAL CHALLENGE & NIGHT OF STARS</h2>
+        <span class="day-tag">CELEBRATION GALA</span>
+      </div>
+      <ul class="schedule-list">
+        <li class="schedule-item">
+          <span class="time-slot">09:00 AM – 12:00 PM</span>
+          <div class="activity-desc"><strong>The Transformation Relay:</strong> Camp-wide signature team obstacle course combining land navigation, ropes skills, and team puzzle-solving.</div>
+        </li>
+        <li class="schedule-item">
+          <span class="time-slot">01:30 PM – 04:00 PM</span>
+          <div class="activity-desc"><strong>Free Choice Activity Hour & Gala Prep:</strong> Time to prep outfit/costumes for the evening banquet or enjoy open waterfront activities.</div>
+        </li>
+        <li class="schedule-item call-window-highlight">
+          <span class="time-slot">04:45 PM – 05:30 PM</span>
+          <div class="activity-desc"><strong>📱 Daily Parent Call Window:</strong> Final daily check-in window before departure day.</div>
+        </li>
+        <li class="schedule-item">
+          <span class="time-slot">06:30 PM – 10:30 PM</span>
+          <div class="activity-desc"><strong>'Night of Stars' Gala Banquet & Dance:</strong> Celebration dinner, camper awards ceremony, talent showcase, and farewell dance party!</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- DAY 5 -->
+    <div class="day-card">
+      <div class="day-header">
+        <h2>DAY 5: CLOSING CEREMONY & HIGH SCHOOL KICKOFF</h2>
+        <span class="day-tag">READY FOR 9TH GRADE</span>
+      </div>
+      <ul class="schedule-list">
+        <li class="schedule-item">
+          <span class="time-slot">08:30 AM – 10:00 AM</span>
+          <div class="activity-desc"><strong>Farewell Breakfast & Cabin Packing:</strong> Cabin clean-up and gear packing.</div>
+        </li>
+        <li class="schedule-item">
+          <span class="time-slot">10:30 AM – 11:30 AM</span>
+          <div class="activity-desc"><strong>Closing Graduation Ceremony:</strong> Parents invited to join! Pinning ceremony, camp video recap reel, and camper high school pledges.</div>
+        </li>
+        <li class="schedule-item">
+          <span class="time-slot">12:00 PM</span>
+          <div class="activity-desc"><strong>Camp Departure:</strong> Pick-up and departure—ready to conquer 9th grade!</div>
+        </li>
+      </ul>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Camp Transformation Youth Foundation</strong> | 1-800-CAMP-FUN</p>
+    <p style="font-size: 0.85rem; margin-top: 0.5rem;">&copy; 2026 Camp Transformation. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
